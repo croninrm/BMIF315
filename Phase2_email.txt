@@ -1,0 +1,35 @@
+Hi all,
+
+
+
+I've uploaded a zip file with my phase 2 files to my github.  I have stuff in output, but of course it can be erased.  
+
+If for some reason you have trouble with the web service, we can manually download the samples and should be able to load them in another way, but this way was the easiest.
+
+
+
+So the dimensions of the dataframes, which means the components of the data, are:
+
+_1: 58 rows and 54676 columns, meaning 58 samples and 54675 features and 1 outcome column.  The outcome here is clearly defined as adeno and squamous cell lung carcinoma
+
+_2: 91 rows and 54676 columns, meaning 91 samples and 54675 features and 1 outcome column.  The outcome here is one of control and tumor type, which is not clear from the documentation
+
+
+
+Each of the features is a positive real number from minimum of 0.5 to maximum of 16.
+
+
+
+The number of rows are the numbered samples of tissue and the columns are the features, with the last column being the outcome, which is one of 2 states which I changed to be 0 and 1 for simplicity and manipulation sake (in _1 this is adenocarcinoma vs squamous cell, and in _2 it is control vs tumor).
+
+The data do not have a lot of missing data (as a matter of fact no data is missing).  The data have a lot of features (54675) as noted above which may make manipulation an issue.
+
+Interestingly looking at the scatter plots and classification, it looks like the first data set does not show a real good separation in this 2-d space, but the second data set does have some differentiation between the first two features that might make them good classifiers.  Of course the data set sample size is small.
+
+
+
+Thanks and let me know if you have any issues.
+
+
+
+Rob
